@@ -6,13 +6,13 @@
 
 package com.nicholasblackburn;
 
+import java.io.*;
 import java.security.*;
 import java.util.Base64;
 
 public class keygenerator {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         try {
-
             KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA", "SUN");
 
             // Initialize KeyPairGenerator.
@@ -25,14 +25,19 @@ public class keygenerator {
             PublicKey publicKey = keyPair.getPublic();
 
             Base64.Encoder encoder = Base64.getEncoder();
+
             System.out.println("privateKey: " + encoder.encodeToString(privateKey.getEncoded()));
             System.out.println("publicKey: " + encoder.encodeToString(publicKey.getEncoded()));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchProviderException e) {
             e.printStackTrace();
+            }
+
         }
+
     }
-}
+
+
 
 
