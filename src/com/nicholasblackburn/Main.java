@@ -5,11 +5,12 @@
 package com.nicholasblackburn;
 
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException {
         int menu;
 
         int selection;
@@ -25,22 +26,24 @@ public class Main {
         System.out.println("4 - Quit");
         System.out.println("-------------------------\n");
         selection = input.nextInt();
-        if (selection == 1){
+        if (selection == 1) {
             keygenerator.main(args);
         }
-        if (selection == 2){
+        if (selection == 2) {
             pass.main(args);
         }
-        if(selection ==3){
+        if (selection == 3) {
             System.out.print("generates passwords \n");
             System.out.print("generates rsa public and private keys ");
         }
-        if (selection == 4){
+        if (selection == 4) {
             System.exit(0);
         }
+    }
 
 
 
     }
 }
+
 

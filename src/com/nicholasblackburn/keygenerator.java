@@ -28,6 +28,7 @@ public class keygenerator {
 
             System.out.println("privateKey: " + encoder.encodeToString(privateKey.getEncoded()));
             System.out.println("publicKey: " + encoder.encodeToString(publicKey.getEncoded()));
+
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchProviderException e) {
