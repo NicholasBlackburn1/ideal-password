@@ -1,8 +1,10 @@
+/*
+ * Copyright Nicholas Blackburn(c) 2018
+ */
+
 package com.nicholasblackburn;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+
 
 public class Main {
 
